@@ -17,7 +17,7 @@ import './Home.css';
 
 
 
-const Home = ({movie: {cur_page,loading,data,total_page},getMovies}) => {
+const Home = ({movie: {cur_page,loading,data,total_page,error},getMovies}) => {
     const params = useParams();
     let { page } = params ;
     
@@ -50,6 +50,9 @@ const Home = ({movie: {cur_page,loading,data,total_page},getMovies}) => {
                <div className="home__loading">
                    <CircularProgress/>
                </div> 
+            )}
+            {!loading && error && (
+                <div style={{textAlign:"center",color:"red"}}>{error}</div>
             )}
             {data.length>0  && (
                 <div className="home__container">

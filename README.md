@@ -1,5 +1,7 @@
 # Getting Started 
 
+Run following commands
+
 * git clone https://github.com/rnsharma93/movie_list.git
 * cd movie_list
 * npm install
