@@ -39,7 +39,7 @@ const Detail = ({movie:{detail,error,loading},getDetail}) => {
     return(
         <div style={{width:"100%"}}>
             {loading && (<CircularProgress />)}
-            {!loading && detail && (
+            {!loading && error=='' && detail && (
                 <div className="detail" style={{backgroundImage:`url(${IMAGE_PATH}/${detail.backdrop_path})`}}>
                     <div className="detail_bg">
                         <div className="detail_poster">
@@ -81,13 +81,13 @@ const Detail = ({movie:{detail,error,loading},getDetail}) => {
                 
 
             )}
-            {!loading && detail && (
+            {!loading && error=='' && detail && (
                 <div className="backdrops_container">
                     <Backdrops movieId={detail.id}/>
                 </div>
             )}
             {error && (
-                <h1>{error}</h1>
+                <h1 style={{color:"Red",textAlign:"center"}}>{error}</h1>
             )}
         </div>
 
