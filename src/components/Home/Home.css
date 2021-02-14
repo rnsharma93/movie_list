@@ -1,0 +1,32 @@
+.home__center {
+    text-align: center;
+    
+}
+
+.home__container {
+    display:flex;
+}
+
+.home__loading {
+    width: 100%;
+    text-align: center;
+}
+
+.home__container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.movie_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home__pager {
+    
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}

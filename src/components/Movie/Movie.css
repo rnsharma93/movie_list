@@ -1,0 +1,30 @@
+a{
+  text-decoration: none;  
+  color:#0056b3;
+}
+
+.movie {
+   
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 220px;
+    box-shadow: 0 2px 6px 0 rgba(99,99,99,.2);
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+
+.movie__img {
+    width: 100%;
+    cursor: pointer;
+    
+}
+
+.movie__info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
